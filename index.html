@@ -6,37 +6,50 @@
   <title>Golden Youth</title>
   <style>
     body {
-      background-color: black;
-      color: white;
-      text-align: center;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000;
     }
-    img.main {
-      max-width: 90%;
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .container img {
+      width: 100%;
       height: auto;
-      margin-top: 30px;
-    }
-    .links {
-      margin-top: 30px;
-    }
-    .links a {
       display: block;
-      margin: 15px 0;
-      font-size: 18px;
-      color: #00afff;
-      text-decoration: none;
+    }
+    .link {
+      position: absolute;
+      color: transparent;
+    }
+    .instagram {
+      top: 200px;
+      left: 80px;
+      width: 400px;
+      height: 40px;
+    }
+    .telegram {
+      top: 300px;
+      left: 80px;
+      width: 400px;
+      height: 40px;
+    }
+    .vk {
+      top: 400px;
+      left: 80px;
+      width: 400px;
+      height: 40px;
     }
   </style>
 </head>
 <body>
-
-  <img class="main" src="IMG_7756.png" alt="Golden Youth">
-
-  <div class="links">
-    <a href="https://www.instagram.com/golden_youth_russia?igsh=MXZ5ZjM0amU2ZDI0aQ==&utm_source=ig_contact_invite" target="_blank">Instagram</a>
-    <a href="https://t.me/GOLDEN_YOUTH_RUSSIA" target="_blank">Telegram</a>
-    <a href="https://vk.com/golden_youth_russia" target="_blank">VK</a>
+  <div class="container">
+    <img src="IMG_6979.jpeg" alt="Golden Youth Links">
+    <a href="https://www.instagram.com/golden_youth_russia?igsh=MXZ5ZjM0amU2ZDI0aQ==&utm_source=ig_contact_invite" target="_blank" class="link instagram"></a>
+    <a href="https://t.me/GOLDEN_YOUTH_RUSSIA" target="_blank" class="link telegram"></a>
+    <a href="https://vk.com/golden_youth_russia" target="_blank" class="link vk"></a>
   </div>
-
 </body>
 </html>
