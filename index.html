@@ -1,56 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Golden Youth</title>
+  <meta charset="UTF-8">
+  <title>Golden Youth Alignment</title>
   <style>
     body {
       margin: 0;
-      background-color: #000;
+      padding: 0;
+      background: #f0f0f0;
+      font-family: sans-serif;
     }
+
     .container {
       position: relative;
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
+      width: fit-content;
+      margin: 100px auto; /* центрирует по горизонтали */
     }
-    .container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .link {
+
+    .rectangles {
       position: absolute;
-      display: block;
-      background-color: rgba(255, 255, 0, 0.3);
-      cursor: pointer;
+      top: 0;
+      left: 0;
+      width: 308px;
+      height: 50px;
+      background: yellow;
+      transform: translateX(65px); /* Сдвиг вправо */
+      z-index: 0;
+      border-radius: 5px;
     }
-    .instagram {
-  top: 350px;  /* было 200px */
-  left: 80px;
-  width: 400px;
-  height: 40px;
-}
-.telegram {
-  top: 450px;  /* было 300px */
-  left: 80px;
-  width: 400px;
-  height: 40px;
-}
-.vk {
-  top: 550px;  /* было 400px */
-  left: 80px;
-  width: 400px;
-  height: 40px;
-}
+
+    .text {
+      position: relative;
+      z-index: 1;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      padding: 5px 15px;
+    }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <img src="IMG_6979.jpeg" alt="Golden Youth Links" />
-    <a href="https://www.instagram.com/golden_youth_russia?igsh=MXZ5ZjM0amU2ZDI0aQ==&utm_source=ig_contact_invite" target="_blank" class="link instagram"></a>
-    <a href="https://t.me/GOLDEN_YOUTH_RUSSIA" target="_blank" class="link telegram"></a>
-    <a href="https://vk.com/golden_youth_russia" target="_blank" class="link vk"></a>
+    <div class="rectangles"></div>
+    <div class="text">golden youth</div>
   </div>
+
 </body>
 </html>
