@@ -7,63 +7,67 @@
     body {
       margin: 0;
       padding: 0;
-      background: #f0f0f0;
-      font-family: sans-serif;
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
+      background: #f0f0f0; /* Светло-серый фон страницы */
+      font-family: sans-serif; /* Стандартный шрифт без засечек */
+      position: relative; /* Позиционирование относительно родителя для дочерних абсолютных элементов */
+      height: 100vh; /* Высота элемента на всю высоту области просмотра */
+      overflow: hidden; /* Скрытие содержимого, выходящего за границы элемента */
     }
 
     .text {
-      position: absolute;
-      top: 100px;
-      left: 201px;
-      font-size: 40px;
-      font-weight: bold;
-      z-index: 1;
+      position: absolute; /* Абсолютное позиционирование */
+      top: 100px; /* Отступ от верхнего края */
+      left: 201px; /* Отступ от левого края (положение текста "golden youth") */
+      font-size: 40px; /* Размер шрифта */
+      font-weight: bold; /* Жирный шрифт */
+      z-index: 1; /* Размещение над другими элементами (желтые прямоугольники) */
     }
 
     a.rect {
-      position: absolute;
-      background-color: yellow;
-      border-radius: 4px;
-      z-index: 0;
-      display: block;
-      text-decoration: none;
+      position: absolute; /* Абсолютное позиционирование */
+      background-color: yellow; /* Желтый цвет фона */
+      border-radius: 4px; /* Закругление углов */
+      z-index: 0; /* Размещение под другими элементами (текст) */
+      display: block; /* Отображение как блочный элемент */
+      text-decoration: none; /* Убираем подчеркивание для ссылок */
+      opacity: 0.5; /* Полупрозрачность для удобства отладки. Можно изменить на 1.0 или удалить после настройки */
     }
 
-    /* Новый прямоугольник 1 */
+    /* Прямоугольник для ссылки на Instagram */
     a.rect.one {
-      left: 344px;
-      top: 403px;
-      width: 370px; /* 714 - 344 */
-      height: 74px; /* 477 - 403 */
+      left: 262px;   /* X-координата начала ссылки на Instagram */
+      top: 362px;    /* Y-координата начала ссылки на Instagram */
+      width: 458px; /* Ширина: (720 - 262) */
+      height: 77px; /* Высота: (439 - 362) */
     }
 
-    /* Новый прямоугольник 2 */
+    /* Прямоугольник для ссылки на Telegram */
     a.rect.two {
-      left: 371px;
-      top: 501px;
-      width: 278px; /* 649 - 371 */
-      height: 20px; /* 521 - 501 */
+      left: 262px;   /* X-координата начала ссылки на Telegram */
+      top: 613px;    /* Y-координата начала ссылки на Telegram */
+      width: 349px; /* Ширина: (611 - 262) */
+      height: 26px; /* Высота: (639 - 613) */
     }
 
-    /* Новый прямоугольник 3 */
+    /* Прямоугольник для ссылки на VK */
     a.rect.three {
-      left: 372px;
-      top: 574px;
-      width: 277px; /* 649 - 372 */
-      height: 20px; /* 594 - 574 */
+      left: 262px;   /* X-координата начала ссылки на VK */
+      top: 700px;    /* Y-координата начала ссылки на VK */
+      width: 313px; /* Ширина: (575 - 262) */
+      height: 25px; /* Высота: (725 - 700) */
     }
   </style>
 </head>
 <body>
 
+  <!-- Основной текст на странице -->
   <div class="text">golden youth</div>
 
+  <!-- Желтые прямоугольники, служащие кликабельными областями для ссылок -->
   <a href="https://instagram.com" target="_blank" class="rect one" title="Instagram"></a>
   <a href="https://t.me" target="_blank" class="rect two" title="Telegram"></a>
   <a href="https://vk.com" target="_blank" class="rect three" title="VK"></a>
 
 </body>
 </html>
+
