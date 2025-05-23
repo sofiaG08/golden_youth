@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Golden Youth + Links</title>
+  <meta charset="UTF-8" />
+  <title>Golden Youth + Clickable Rectangles</title>
   <style>
     body {
       margin: 0;
@@ -23,47 +23,47 @@
       z-index: 1;
     }
 
-    .rect {
+    a.rect {
       position: absolute;
       background-color: yellow;
       border-radius: 4px;
       z-index: 0;
+      display: block;
+      text-decoration: none;
     }
 
-    /* Прямоугольник Instagram */
-    .rect.instagram {
-      left: 262px;
-      top: 439px;
-      width: 100px; /* 362 - 262 */
-      height: 281px; /* 720 - 439 */
+    /* Новый прямоугольник 1 */
+    a.rect.one {
+      left: 344px;
+      top: 403px;
+      width: 370px; /* 714 - 344 */
+      height: 74px; /* 477 - 403 */
     }
 
-    /* Прямоугольник Telegram */
-    .rect.telegram {
-      left: 613px;
-      top: 262px;
-      width: 26px; /* 639 - 613 */
-      height: 349px; /* 611 - 262 */
+    /* Новый прямоугольник 2 */
+    a.rect.two {
+      left: 371px;
+      top: 501px;
+      width: 278px; /* 649 - 371 */
+      height: 20px; /* 521 - 501 */
     }
 
-    /* Прямоугольник VK */
-    .rect.vk {
-      left: 700px;
-      top: 262px;
-      width: 25px; /* 725 - 700 */
-      height: 313px; /* 575 - 262 */
+    /* Новый прямоугольник 3 */
+    a.rect.three {
+      left: 372px;
+      top: 574px;
+      width: 277px; /* 649 - 372 */
+      height: 20px; /* 594 - 574 */
     }
   </style>
 </head>
 <body>
 
-  <!-- Текст -->
   <div class="text">golden youth</div>
 
-  <!-- Жёлтые прямоугольники -->
-  <div class="rect instagram" title="Instagram"></div>
-  <div class="rect telegram" title="Telegram"></div>
-  <div class="rect vk" title="VK"></div>
+  <a href="https://instagram.com" target="_blank" class="rect one" title="Instagram"></a>
+  <a href="https://t.me" target="_blank" class="rect two" title="Telegram"></a>
+  <a href="https://vk.com" target="_blank" class="rect three" title="VK"></a>
 
 </body>
 </html>
