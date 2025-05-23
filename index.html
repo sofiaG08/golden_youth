@@ -2,49 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Golden Youth Alignment</title>
+  <title>Golden Youth + Links</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       background: #f0f0f0;
       font-family: sans-serif;
-    }
-
-    .container {
       position: relative;
-      width: fit-content;
-      margin: 100px auto; /* центрирует по горизонтали */
-    }
-
-    .rectangles {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 308px;
-      height: 50px;
-      background: yellow;
-      transform: translateX(65px); /* Сдвиг вправо */
-      z-index: 0;
-      border-radius: 5px;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .text {
-      position: relative;
-      z-index: 1;
+      position: absolute;
+      top: 100px;
+      left: 201px;
       font-size: 40px;
       font-weight: bold;
-      text-align: center;
-      padding: 5px 15px;
+      z-index: 1;
+    }
+
+    .rect {
+      position: absolute;
+      background-color: yellow;
+      border-radius: 4px;
+      z-index: 0;
+    }
+
+    /* Прямоугольник Instagram */
+    .rect.instagram {
+      left: 262px;
+      top: 439px;
+      width: 100px; /* 362 - 262 */
+      height: 281px; /* 720 - 439 */
+    }
+
+    /* Прямоугольник Telegram */
+    .rect.telegram {
+      left: 613px;
+      top: 262px;
+      width: 26px; /* 639 - 613 */
+      height: 349px; /* 611 - 262 */
+    }
+
+    /* Прямоугольник VK */
+    .rect.vk {
+      left: 700px;
+      top: 262px;
+      width: 25px; /* 725 - 700 */
+      height: 313px; /* 575 - 262 */
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="rectangles"></div>
-    <div class="text">golden youth</div>
-  </div>
+  <!-- Текст -->
+  <div class="text">golden youth</div>
+
+  <!-- Жёлтые прямоугольники -->
+  <div class="rect instagram" title="Instagram"></div>
+  <div class="rect telegram" title="Telegram"></div>
+  <div class="rect vk" title="VK"></div>
 
 </body>
 </html>
